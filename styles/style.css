@@ -1,0 +1,452 @@
+@import'fonts.css';
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+   list-style: none;
+}
+
+.container{
+   max-width: 1345px;
+   width: 100%;
+   margin: 0 auto;
+   padding: 0 15px;
+}
+
+body{
+   background-color: #EFF5F5;
+}
+/* HEADER START */
+
+.header__nav{
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 15px;
+}
+.header__nav-logo{
+   display: flex;
+   align-items: center;
+}
+.header__nav-span{
+   display: block;
+}
+.header__nav-LogoSpan{
+   margin-left: 5px;
+}
+
+.header__nav-LogoSpan .header__nav-span:first-child{
+   color: #b49081;
+   line-height: 15px;
+   font-size: 12px;
+   font-family: 'Mont-medium';
+}
+
+.header__nav-LogoSpan .header__nav-span:last-child{
+  color: #563529; 
+  letter-spacing: 0.75em; /*межбуквенный интервал*/
+  line-height: 17px;
+  
+  font-size: 14px;
+  font-family: 'Mont-black';
+}
+
+.header__nav-menu{
+   display: flex;
+   column-gap: 40px;
+   
+}
+
+.header__nav-list{
+   display: flex;
+   column-gap: 25px;
+   align-items: center;
+   
+}
+
+.header__nav-link{
+   color: #626262;
+   line-height: 20px;
+   font-size: 16px;
+   font-family: 'Mont-regular';
+}
+
+.white-btn{
+   background:#FFFFFF;
+   padding: 9px 39px;
+   display: inline-block;
+   border-radius: 6px; /* отвечает за углы*/
+   box-shadow: 0px 13px 20px -15px rgba(0, 71, 184, 0.49);
+    color: #323232;
+    font-size: 16px;
+    line-height: 20px;
+    font-family: 'Mont-regular';
+}
+
+.header__content {
+   position: relative;  /* определяет положение эдемента устанавливается относительно его исходного места*/
+   height: 700px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.header__content-bg{
+   position: absolute;/* указывает что  элемент бyдет абсалютно позиционирован. другие элементы будут думать что его нету.  */  
+   z-index: -1; /* управляет приорететом эдемента*/
+}
+
+.header__content-info{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.header__contetnt-title{
+   color: #323232;
+   font-size: 50px;
+   line-height: 61px;
+   font-family: 'Mont-bold';
+   max-width: 530px;
+   width: 100%;
+   
+}
+
+.header__content-links{
+   position: absolute;
+   left: 50%;
+   bottom: -50px;
+   max-width: 635px;
+   width: 100%;
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+   transform: translateX(-50%); /*трансформирует эдтмент по Х оси*/
+   border-radius: 20px;
+   background: rgba(255,255,255, 0.4);
+   border: 1px solid #EAEAEA;
+   box-shadow: 0px 59px 30px -40px rgba(0, 133, 255, 0.1);
+   padding: 25px 0;
+   backdrop-filter: blur(30px);
+}
+/* HEADER END */
+
+
+/* MAIN START */
+ .main{
+   padding-top: 120px;
+   padding-bottom: 100px;
+ }
+ 
+ .main__course{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+ }
+
+.main-title{
+   color: #626262;
+   line-height: 37px;
+   font-size: 30px;
+   font-family: 'Mont-bold';
+}
+
+
+.main__course-item{
+   background-color: #FFFFFF;
+   box-shadow: 0px 30px 30px -15px rgba(0, 133, 255, 0.1);
+   border-radius: 13px;
+   padding: 15px 32px 15px 15px;
+   display: flex;
+   align-items: center;
+   column-gap: 30px; /*работает по горизонтале*/
+   max-width: 306px;
+   width: 100%;
+}
+
+.main__course-count{
+   color: #323232;
+   font-size: 20px;
+   line-height: 24px;
+   font-family:'Mont-bold';
+}
+
+.main__course-line{
+  width: 43px;
+  height: 5px; 
+  position: relative;
+  display: flex ;
+  margin-left: 17px;
+  margin-right: 12px;
+}
+
+.main__course-line::before{
+   content:'';
+   display: block;
+   width: 100%;
+   height: 1px;
+   background-color: #626262;
+   position: absolute;
+   top: 0;
+}
+
+.main__course-line::after{
+   content:'';
+   display: block;
+   width: 100%;
+   height: 1px;
+   background-color: #626262;
+   position: absolute;
+   bottom: 0;
+}
+
+.main__course-info{
+   display: flex;
+   align-items: center;
+}
+
+.main__course-price{
+   color: #323232;
+   font-size: 20px;
+   line-height: 24px;
+   font-family: 'Mont-bold';
+   
+}
+
+.main__course-sum{
+   font-family: 'Mont-regular';
+}
+
+.main__course-items{
+   display: flex;
+   flex-wrap: wrap;
+   gap: 30px;
+   margin-top: 32px;
+}
+
+.main__course-right{
+   width: 50%;
+}
+
+.main__cards{
+   margin: 50px 0;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.main__cards-subtitle{
+   color: #626262;
+   line-height: 24px;
+   font-size: 20px;
+   font-family: 'Mont-light';
+   margin-top: 12px;
+   margin-bottom: 30px;
+}
+
+.main__cards-visa{
+   font-family: 'Mont-bold';
+}
+
+.main__cards-info{
+   color: #626262;
+   font-size: 16px;
+   line-height: 20px;
+   font-family: 'Mont-bold';
+   margin-bottom: 20px;
+}
+
+.main__cards-info > span{
+   margin-left: 30px;
+   
+}
+
+
+.main__cards-link{
+   margin-right: 30px;
+}
+
+.main__offer .main__title{
+   text-align: center;
+   margin-bottom: 30px;
+   
+}
+
+.main__offer-card{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   max-width: 642px;
+   width: 100%;
+   border-radius: 10px;
+   padding: 20px;
+   position: relative;
+}
+
+.main__offer-card:first-child{
+   background-color: #BDC4FF;
+   box-shadow: 0px 40px 30px -25px rgba(189, 196, 255, 0.5);
+   border-radius: 100px 10px;
+}
+
+.main__offer-card::before{
+   content: 'ХИТ';
+   display: inline-block;
+   border-radius: 40px 4px;
+   background: rgba(255, 255, 255, 0.4);
+border: 0.5px solid rgba(215, 215, 215, 0.3);
+box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.3);
+backdrop-filter: blur(15px);
+padding: 3px 16px;
+position: absolute;
+top: -10px;
+font-size: 12px;
+line-height: 15px;
+color: #000000;
+font-family: 'Mont-bold';
+}
+
+.main__offer-title{
+   color: #626262;
+   font-size: 20px;
+   line-height: 24px;
+   font-family: 'Mont-bold';
+   margin-bottom: 20px;
+}
+
+.main__offer-description{
+   font-size: 16px;
+   line-height: 20px;
+  color: #323232;
+  font-family: 'Mont-regular';
+  margin-bottom: 20px;
+}
+
+.main__offer-term{
+   color: #323232;
+   font-size: 14px;
+   line-height: 17px;
+   font-family: 'mont-regular';
+   margin-bottom: 20px;
+}
+
+.main__offer-card:last-child{
+   background-color: #FFD280;
+   box-shadow: 0px 40px 30px -25px rgba(255, 210, 128, 0.4);
+   border-radius: 100px 10px;
+}
+
+.main__offer-content{
+   display: flex;
+   justify-content: space-between;
+   
+}
+
+.main-offer-all{
+   display: block;
+   max-width: 194px;
+   width: 100%;
+   text-align: center;
+   margin: 30px auto 0 auto;
+}
+
+.main__servioces{
+   margin-top: 50px;
+}
+
+.main__services .main__title{
+   text-align: center;
+}
+
+.main__services-content{
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   margin: 30px 0;
+}
+
+.main__services-left{
+   border-radius: 100px 10px;
+   background: #97EAB9;
+   box-shadow: 0px 40px 30px -25px rgba(151, 234, 185, 0.4);
+   max-width: 642px;
+   width: 100%;
+   padding-top: 25px;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 25px;
+}
+
+.main__services-item{
+ display: flex;
+ align-items: center;  
+ max-width: 642px;
+ width: 100%;
+ justify-content: space-between;
+ border-radius: 10px;
+ 
+}
+
+.main__services-item:first-child{
+   background: #FFC1BD;
+   box-shadow: 0px 25px 30px -20px rgba(255, 193, 189, 0.5);
+   border-radius: 100px 10px; 
+   margin-bottom: 45px;
+   padding: 49px 35px;
+   column-gap: 35px;
+}
+
+.main__services-item:last-child{
+   background: #C1B7FF;
+   box-shadow: 0px 25px 30px -25px rgba(193, 183, 255, 0.4);
+   border-radius: 100px 10px;
+   padding: 38px 64px;
+   column-gap: 65px;
+}
+
+.main__services-links{
+   display: flex;
+   justify-content: center;
+   column-gap: 30px;
+}
+
+.main__services-link{
+   background: #FFFFFF;
+   box-shadow: 0px 13px 20px -15px rgba(0, 71, 184, 0.49);
+   border-radius: 12px;
+   max-width: 360px;
+   width: 100%;
+   padding: 25px;
+   display: flex;
+   justify-content: center;
+}
+
+
+
+
+/* MAIN END */
+
+.theend{
+   display: flex;
+   
+   transform: translateX(45%)  
+   
+   
+}
+
+.icon3{
+   max-width: 100px;
+   width: 100%;
+}
+
+.header__nav-LogoSpan{
+   display: flex;
+   flex-direction: column;
+   margin-top: 30px;
+}
+
+.end{
+   display: flex;
+   justify-content: center;
+}
