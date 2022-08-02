@@ -102,7 +102,7 @@ body{
    justify-content: space-between;
 }
 
-.header__contetnt-title{
+.header__conternt-tittle{
    color: #323232;
    font-size: 50px;
    line-height: 61px;
@@ -144,7 +144,7 @@ body{
    justify-content: space-between;
  }
 
-.main-title{
+.main__title{
    color: #626262;
    line-height: 37px;
    font-size: 30px;
